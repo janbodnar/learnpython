@@ -47,7 +47,8 @@
         <h1>Zoznám sa s Pythonom</h1>
 
         <p>
-            Na tejto prezentácii si povieme zopár slov o jazyku Python a ukážeme si, ako naištalujeme Python na systéme Windows 10.
+            Na tejto prezentácii si povieme zopár slov o jazyku Python a ukážeme si, ako naištalujeme Python na systéme
+            Windows 10.
         </p>
 
         <h2>Jazyk Python</h2>
@@ -60,15 +61,18 @@
             <li>Python je veľmi často jazyk prvého kontaktu; nahrádza Pascal ako výukový jazyk na školách.</li>
             <li>Python je multiplatformovým programovacím jazykom. Beží na Linuxe, Mac OS a Windows OS.</li>
             <li>Medzi hlavné ciele jazyka patria produktivita programátora a čitateľnosť kódu.</li>
-            <li>Python podporuje tri programovacie paradigmy: procedurálne, objektovo-orientované a funkcionálne programovanie.</li>
-            <li>Python je minimalistický jazyk. Nepoužíva ukončovaciu bodkočiarku a namiesto zložených zátvoriek používa
+            <li>Python podporuje tri programovacie paradigmy: procedurálne, objektovo-orientované a funkcionálne
+                programovanie.</li>
+            <li>Python je minimalistický jazyk. Nepoužíva ukončovaciu bodkočiarku a namiesto zložených zátvoriek
+                používa
                 medzery.</li>
             <li>Python je open source softvér.</li>
             <li>Python je vyvíjaný veľkou skupinou dobrovoľníkov.</li>
         </ul>
 
         <p>
-            V súčasnosti existujú dve verzie Pythonu: Python 2.x and Python 3.x. Python 3 nie je spätne kompatibilný s verziou Python
+            V súčasnosti existujú dve verzie Pythonu: Python 2.x and Python 3.x. Python 3 nie je spätne kompatibilný s
+            verziou Python
             2. Nová verzia vznikla preto, aby sa odstránili staré dizajnové chyby.
         </p>
 
@@ -76,7 +80,8 @@
 
         <ul>
             <li>Základy Pythonu sú jednoduché, ale zvládnuť celý jazyka a doménu je náročné.</li>
-            <li>Keď sa naučím programovať v Pythone, nie som/nemusím byť profesionálny programátor. Ináč povedané, Python
+            <li>Keď sa naučím programovať v Pythone, nie som/nemusím byť profesionálny programátor. Ináč povedané,
+                Python
                 nie je určený len profesionálnym programátorom.</li>
             <li>Na zvládnutie jazyka Python nie je potrebné PhD. z matematiky.</li>
             <li>Python sa učia deti na školách, sú v ňom však naprogramované veľmi zložité projekty.</li>
@@ -95,8 +100,8 @@
             <li>Výuka</li>
             <li>Data science</li>
             <li>Webové projekty</li>
-            <li>Bezpečnosť, pen testing</li>         
-            <li>Vnútrofiremné (in-house) aplikácie</li>   
+            <li>Bezpečnosť, pen testing</li>
+            <li>Vnútrofiremné (in-house) aplikácie</li>
         </ul>
 
         <h2>Atraktívne oblasti</h2>
@@ -150,11 +155,54 @@
             priamo z terminálu bez potreby určenia absolútnej cesty k príkazu.
         </p>
 
+        <pre>
+C:\>echo %PATH%
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath;
+C:\Windows\system32;
+C:\Windows;
+C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;
+C:\Users\Jano7\AppData\Local\Programs\Python\Python37\Scripts\;
+C:\Users\Jano7\AppData\Local\Programs\Python\Python37\;
+C:\Users\Jano7\AppData\Local\Programs\Python\Python37-32\Scripts\;
+C:\Users\Jano7\AppData\Local\Programs\Python\Python37-32\;
+C:\Users\Jano7\AppData\Local\Microsoft\WindowsApps;
+C:\Users\Jano7\AppData\Local\Programs\Microsoft VS Code\bin;
+C:\Users\Jano7\AppData\Local\Programs\Git\cmd;
+C:\Users\Jano7\AppData\Local\Programs\Git\mingw64\bin;
+C:\Users\Jano7\AppData\Local\Programs\Git\usr\bin            
+        </pre>
+
+        <p>
+            Takto si zobrazíme premennú PATH v CMD.
+        </p>
+
+        <pre>
+PS C:\> echo $env:path
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath;
+C:\Windows\system32;
+C:\Windows;C:\Windows\System32\Wbem;
+C:\Windows\System32\WindowsPowerShell\v1.0\;
+C:\Users\Jano7\AppData\Local\Programs\Python\Python37\Scripts\;
+C:\Users\Jano7\AppData\Local\Programs\Python\Python37\;
+C:\Users\Jano7\AppData\Local\Programs\Python\Python37-32\Scripts\;
+C:\Users\Jano7\AppData\Local\Programs\Python\Python37-32\;
+C:\Users\Jano7\AppData\Local\Microsoft\WindowsApps;
+C:\Users\Jano7\AppData\Local\Programs\Microsoft VS Code\bin;
+C:\Users\Jano7\AppData\Local\Programs\Git\cmd;
+C:\Users\Jano7\AppData\Local\Programs\Git\mingw64\bin;
+C:\Users\Jano7\AppData\Local\Programs\Git\usr\bin          
+        </pre>
+
+        <p>
+            Takto si zobrazíme premennú PATH v CMD.
+        </p>
+
+        <img src="img/env.png" alt="Premenné prostredia">
 
         <h3>Git a Git bash</h3>
 
         <p>
-            Voliteľne je možné naištalovať si Git pre Windows, ktorý 
+            Voliteľne je možné naištalovať si Git pre Windows, ktorý
             obsahuje nástroje Git a rôzne pomocné utility známe z Linuxu.
             Git je distribuovaný systém správy verzií zdrojového kódu.
         </p>
@@ -242,8 +290,10 @@ of three days, during the second Persian invasion of Greece.</pre>
             <li>Napíš funckiu isAnagram, ktorá zistí, či dané slovo je anagram iného.</li>
             <li>Napíš funkciu isPalindrome, ktorá zistí, či dané slovo je palindróm iného.</li>
             <li>Nájdi počet samohlások vo vete "Today is a beatiful day".</li>
-            <li>Majme n-ticu (3, 5, 2, 1, 8, 9, 12, 11, 7, 6). Vypíš najväčšie minimum, maximum, sumu a počet prvkov v n-tici.</li>
-            <li>Majme n-ticu ('Martin', 'Lucy', 'Peter', 'Martin', 'Robert', 'Peter'). Vytvor z nej novú n-ticu bez duplikátov.</li>
+            <li>Majme n-ticu (3, 5, 2, 1, 8, 9, 12, 11, 7, 6). Vypíš najväčšie minimum, maximum, sumu a počet prvkov v
+                n-tici.</li>
+            <li>Majme n-ticu ('Martin', 'Lucy', 'Peter', 'Martin', 'Robert', 'Peter'). Vytvor z nej novú n-ticu bez
+                duplikátov.</li>
             <li>Zaokrúhli výraz 334/5000 na dve a dri desatinné miesta.</li>
             <li>Konvertuj čísla z n-tice (23, 168, 997, 1455, 3999) na rímsku sústavu.</li>
             <li>Načítaj súbor <em>thermopylae.txt</em> a vypíš jeho obsah.</li>
@@ -252,8 +302,9 @@ of three days, during the second Persian invasion of Greece.</pre>
             <li>Vypýtaj si od užívateľa veľkosť polomeru a vypočítaj obvod a obsah kruhu.</li>
             <li>Zisti počet dní do Vianoc (25.12.).</li>
             <li>Zisti koľko dní ubehlo od bitky pri Borodine.</li>
-            <li>Vygeneruj plochý zoznam zo zoznamu zoznamov (napr. [[1, 2], [3, 4], [5, 6], [7]] => [1, 2, 3, 4, 5, 6, 7]).
-                </li>
+            <li>Vygeneruj plochý zoznam zo zoznamu zoznamov (napr. [[1, 2], [3, 4], [5, 6], [7]] => [1, 2, 3, 4, 5, 6,
+                7]).
+            </li>
             <li>Vypíš obsah titulku zo stránky learnpython.pro (zo značky title).</li>
             <li>Vypíš hexadecimálny výstup z malého PNG obrázka. Výstup bude mať desať stĺpcov oddelených medzerou.</li>
             <li>Načítaj súbor <em>thermopylae.txt</em> a zisti počet jeho slov.</li>
