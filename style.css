@@ -1,0 +1,30 @@
+main {
+    width: 750px;
+    font-family: Georgia;
+    font-size: 1.1em;
+    margin: auto;
+}
+
+.code {
+    line-height: 1.4;
+    margin-top: 0;
+    border: 1px solid #bdbdbd;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background: #edeff4;
+    color: black;
+    padding-top: 10px;
+}
+
+pre {
+    font-family: monospace;
+    font-size: 10pt;
+    /*   white-space: pre-wrap; */
+    overflow: auto;
+}
+
+.codehead {
+    background: #cdcdcd;
+    padding-left: 15px;
+    margin-bottom: 0
+}

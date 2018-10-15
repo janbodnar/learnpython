@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Študijné materiály</title>
+</head>
+<body>
+
+<h1>Študijné materiály</h1>
+
+<p>
+V tejto časti si zhrnieme odporúčané študijné materiály pre jazyk Python.
+</p>
+
+<h2>Knihy</h2>
+
+<ul>
+<li>Eric Matthes, <a href="https://www.amazon.co.uk/Python-Crash-Course-Hands-Project-Based/dp/1593276036/ref=asap_bc?ie=UTF8">Python
+        Crash Course</a></li>
+<li>Luciano Ramalho, <a href="https://www.amazon.co.uk/Fluent-Python-Luciano-Ramalho/dp/1491946008/ref=pd_sbs_14_3?_encoding=UTF8&pd_rd_i=1491946008&pd_rd_r=bbbcae92-ba8d-11e8-a9e8-99450fc79241&pd_rd_w=eV3ne&pd_rd_wg=Gb4Zc&pf_rd_i=desktop-dp-sims&pf_rd_m=A3P5ROKL5A1OLE&pf_rd_p=4fe8124b-f455-49bd-9e7d-c251837661fc&pf_rd_r=68N37ACTZD96257ZKVH5&pf_rd_s=desktop-dp-sims&pf_rd_t=40701&psc=1&refRID=68N37ACTZD96257ZKVH5">Fluent
+        Python
+    </a></li>
+</ul>
+
+<h2>Online materiály</h2>
+
+<ul>
+    <li>Oficiálna dokumentácia, <a href="https://docs.python.org/3/index.html">docs.python.org/3/index.html</a></li>
+    <li>Tutoriál <a href="http://zetcode.com/lang/python/">zetcode.com/lang/python/</a></li>
+    <li>Stránka Real Python <a href="https://realpython.com/">realpython.com</a></li>
+    <li>Python Rosetta Code <a href="https://rosettacode.org/wiki/Category:Python">rosettacode.org/wiki/Category:Python</a></li>
+</ul>
+
+<h2>Video kurzy</h2>
+
+<ul>
+    <li><a href="https://www.youtube.com/watch?v=rfscVS0vtbw">Learn Python - Full Course for Beginners</a></li>
+    <li><a href="https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU">Python tutorials</a></li>
+</ul>
+
+<p>
+    Pomocou uvedených materiálov sa dá naučiť Python na pokročilú úroveň. Avšak mnohé veci sa človek naučí iba od skúsenejších
+    kolegov.
+</p>
+
+<h2>Príklady</h2>
+
+<p>
+    Niekoľko príkladov:
+</p>
+
+<div class="codehead">apples.py</div>
+<pre class="code">
+#!/usr/bin/python3
+
+# number of baskets
+baskets = 16
+
+# number of apples in a basket
+apples_in_basket = 24
+
+# we get the total number of apples
+total = baskets * apples_in_basket
+
+print("There are total of", total, "apples")
+</pre>
+
+<div class="codehead">fahrenheit.py</div>
+<pre class="code">
+#!/usr/bin/python3
+
+# fahrenheit.py
+
+def C2F(c):
+return c * 9/5 + 32
+
+print(C2F(100))
+print(C2F(0))
+print(C2F(30))
+</pre>
+
+<div class="codehead">recap.py</div>
+<pre class="code">
+#!/usr/bin/python3
+
+# recapitulation
+# recap.py
+
+import random
+import sys
+
+# ******************************      
+# os module
+
+print(sys.version)
+
+print("******************************") 
+
+# ******************************      
+# list, for loop, built-ins
+
+nums = [1, 2, 3, 4, 5]
+
+print("There are {0} elements in the list".format(len(nums)))
+
+for e in nums:
+print(e, end=' ')
+
+print()    
+
+print("maximum: {0}".format(max(nums)))
+print("maximum: {0}".format(max(nums)))
+print("summation: {0}".format(sum(nums)))
+
+# ******************************
+# expressions, operators
+
+x = 45
+y = 12
+
+z = x * y - 12
+print(z)
+
+print(12 / 4 * 3)
+
+
+# ******************************
+# booleans      
+
+male = False
+male = bool(random.randint(0, 1))
+
+if (male):
+print("We will use name John")
+else:
+print("We will use name Victoria")
+
+
+print("******************************") 
+
+# ******************************      
+# dictionary   
+
+capitals = {}
+capitals["svk"] = "Bratislava"
+capitals["deu"] = "Berlin"
+capitals["dnk"] = "Copenhagen"
+
+print(capitals)
+
+
+for k, v in capitals.items():
+print("key: {0}, value: {1}".format(k, v))
+
+print("******************************")
+
+# ******************************      
+# while loop
+
+i = len(nums) - 1
+mysum = 0
+
+while (i >= 0):
+
+mysum += nums[i]
+i -= 1
+
+
+print("summation 2: {0}".format(mysum))
+
+print("******************************")
+
+# ******************************      
+# introspection
+
+ab = ()
+print(type(ab))
+print(dir(ab))
+print(ab.__doc__)
+
+print("******************************")
+
+# ******************************      
+# sets
+
+set1 = { 'a', 'b', 'c', 'c', 'd' }
+set2 = { 'a', 'b', 'x', 'y', 'z' }
+
+print("Set 1:", set1)
+print("Set 2:", set2)
+print("intersection:", set1.intersection(set2))
+print("union:", set1.union(set2))
+print("difference:", set1.difference(set2))
+print("symmetric difference:", set1.symmetric_difference(set2))
+</pre>    
+
+</body>
+</html>
