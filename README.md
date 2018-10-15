@@ -2,4 +2,4 @@
 
 Prednášky o programovacom jazyku Python pre začiatočníkov
 
-<a href="learnpython.pro">learnpython.pro</a>
+<a href="http://learnpython.pro">learnpython.pro</a>
