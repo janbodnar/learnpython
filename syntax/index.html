@@ -122,7 +122,6 @@ sa to neodporúča.
     
 <p>
 Literál je notácia, ktorá reprezentuje hodnotu v zdrojovom kóde.     
-A literal is any notation for representing a value in a Python source code. 
 </p>
 
 <pre>
@@ -135,7 +134,7 @@ V tomto príklade priradíme dve hodnoty premenným <code>age</code> a
 <code>nationality</code>. Číslo 29 a režazec "Hungarian" sú literálmi.
 </p>
 
-<h2>Opertárory</h2>
+<h2>Operárory</h2>
 
 <p>
 Operátor je symbol, ktorý sa používa na vykonanie akcie na hodnotách. 
@@ -151,6 +150,35 @@ is    is not    &lt:    >    !=    &lt:>
 
 <p>
 Toto je zoznam operátorov v Pythone.    
+</p>
+
+<div class="codehead">operators.py</div>
+<pre class="code">
+#!/usr/bin/env python3
+
+x = 23
+y = 43
+
+z = x * y / 10
+
+print(z)
+
+age = 19
+ 
+if (age > 18):
+    print("eligible for driving licence")
+
+nums = (2, 4, 6, 8, 10)
+val = 6
+
+if val in nums:
+    print("value is in the nums tuple")
+else:
+    print("value is not in the nums tuple")
+</pre>
+
+<p>
+Príklad ukazuje použitie niekoľkých operátorov.    
 </p>
 
     
