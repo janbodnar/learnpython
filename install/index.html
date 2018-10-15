@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inštalácia Pythonu na Windows 10</title>
+</head>
+
+<body>
+
+    <h2>Inštalácia Pythonu</h2>
+
+    <p>
+        Na tejto prezentácii si povieme zopár slov o jazyku Python a
+        ukážeme si, ako naištalujeme Python na systéme Windows 10.
+    </p>
+
+    <h2>Jazyk Python</h2>
+
+    <ul>
+        <li>Python je dynamický programovací jazyk.</li>
+        <li>Bol vyvinutý holandským programátorom Guidom van Rossum.</li>
+        <li>Python je jazyk určený pre všeobecné využitie.</li>
+        <li>Prvá verzia Pythonu bola uverejnená v roku 1991.</li>
+        <li>Python je veľmi často jazyk prvého kontaktu; nahrádza Pascal ako výukový jazyk na školách.</li>
+        <li>Python je multiplatformovým programovacím jazykom. Beží na Linuxe, Mac OS a Windows OS.</li>
+        <li>Medzi hlavné ciele jazyka patria produktivita programátora a čitateľnosť kódu.</li>
+        <li>Python podporuje tri programovacie paradigmy: procedurálne, objektovo-orientované a funkcionálne
+            programovanie.
+        </li>
+        <li>Python je minimalistický jazyk. Nepoužíva ukončovaciu bodkočiarku a namiesto zložených zátvoriek používa
+            medzery.
+        </li>
+        <li>Python je open source softvér.</li>
+        <li>Python je vyvíjaný veľkou skupinou dobrovoľníkov.</li>
+    </ul>
+
+    <p>
+        V súčasnosti existujú dve verzie Pythonu: Python 2.x and Python 3.x. 
+        Python 3 nie je spätne kompatibilný s verziou Python 2. Nová verzia 
+        vznikla preto, aby sa odstránili staré dizajnové chyby.
+    </p>
+
+    <h2>Nesprávne predstavy o jazyku Python a programovaní</h2>
+
+    <ul>
+        <li>Základy Pythonu sú jednoduché, ale zvládnuť celý jazyka a doménu je náročné.</li>
+        <li>Keď sa naučím programovať v Pythone, nie som/nemusím byť profesionálny programátor. Ináč povedané, Python
+            nie je určený len profesionálnym programátorom.</li>
+        <li>Na zvládnutie jazyka Python nie je potrebné PhD. z matematiky.</li>
+        <li>Python sa učia deti na školách, sú v ňom však naprogramované veľmi zložité projekty.</li>
+    </ul>
+
+    <h2>Python v praxi</h2>
+
+    <p>
+        Na Slovensku rastie počet pracovných pozícií, kde sa vyžaduje Python.
+    </p>
+
+    <ul>
+        <li>Sekundárny jazyk popri C, C++, Jave</li>
+        <li>Automatizácia, buildovanie a administrácia</li>
+        <li>Výuka</li>
+        <li>Data science</li>
+        <li>Webové projekty</li>
+        <li>Bezpečnosť, pen testing</li>
+        <li>Vnútrofiremné (in-house) aplikácie</li>
+    </ul>
+
+    <h2>Atraktívne oblasti</h2>
+
+    <ul>
+        <li>Machine learning</li>
+        <li>Pen testing/security</li>
+    </ul>
+
+    <h2>Inštalácia Pythonu na Windows OS</h2>
+
+    <p>Inštalačné verzie jazyka Python 3:</p>
+
+    <ul>
+        <li>python-3.7.0.exe -- 32 bit version</li>
+        <li>python-3.7.0-amd64.exe -- 64 bit version</li>
+    </ul>
+
+    <p>
+        Počas inštalácie, potrebujeme zaškrtnúť voľbu <em>Add Python to PATH</em>.
+    </p>
+
+    <img src="img/pyins.png" alt="Python inštalácia">
+
+
+    <h3>Inštalačné adresáre</h3>
+
+    <ul>
+        <li>C:\Users\user7\AppData\Local\Programs\Python\Python37 -- 64 bitová verzia</li>
+        <li>C:\Users\user7\AppData\Local\Programs\Python\Python37-32 -- 32 bitová verzia</li>
+    </ul>
+
+    <h3>Terminály vo Windows 10</h3>
+
+    <p>
+        Existujú viaceré terminály/konzoly v operačnom systéme Windows 10:
+    </p>
+
+    <ul>
+        <li>Klasické CMD</li>
+        <li>Powershell</li>
+        <li>Git Bash</li>
+    </ul>
+
+    <img src="img/cmd.png" alt="Command Prompt">
+
+    <h3>Premenná prostredia PATH</h3>
+
+    <p>
+        Premenná prostredia PATH nám umožnuje spúšťať príkazy (vrátane interpreta Pythonu) priamo z terminálu bez
+        potreby určenia
+        absolútnej cesty k príkazu.
+    </p>
+
+    <pre>
+    C:\>echo %PATH%
+    C:\Program Files (x86)\Common Files\Oracle\Java\javapath;
+    C:\Windows\system32;
+    C:\Windows;
+    C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;
+    C:\Users\Jano7\AppData\Local\Programs\Python\Python37\Scripts\;
+    C:\Users\Jano7\AppData\Local\Programs\Python\Python37\;
+    C:\Users\Jano7\AppData\Local\Programs\Python\Python37-32\Scripts\;
+    C:\Users\Jano7\AppData\Local\Programs\Python\Python37-32\;
+    C:\Users\Jano7\AppData\Local\Microsoft\WindowsApps;
+    C:\Users\Jano7\AppData\Local\Programs\Microsoft VS Code\bin;
+    C:\Users\Jano7\AppData\Local\Programs\Git\cmd;
+    C:\Users\Jano7\AppData\Local\Programs\Git\mingw64\bin;
+    C:\Users\Jano7\AppData\Local\Programs\Git\usr\bin            
+    </pre>
+
+    <p>
+        Takto si zobrazíme premennú PATH v CMD.
+    </p>
+
+    <pre>
+    PS C:\> echo $env:path
+    C:\Program Files (x86)\Common Files\Oracle\Java\javapath;
+    C:\Windows\system32;
+    C:\Windows;C:\Windows\System32\Wbem;
+    C:\Windows\System32\WindowsPowerShell\v1.0\;
+    C:\Users\Jano7\AppData\Local\Programs\Python\Python37\Scripts\;
+    C:\Users\Jano7\AppData\Local\Programs\Python\Python37\;
+    C:\Users\Jano7\AppData\Local\Programs\Python\Python37-32\Scripts\;
+    C:\Users\Jano7\AppData\Local\Programs\Python\Python37-32\;
+    C:\Users\Jano7\AppData\Local\Microsoft\WindowsApps;
+    C:\Users\Jano7\AppData\Local\Programs\Microsoft VS Code\bin;
+    C:\Users\Jano7\AppData\Local\Programs\Git\cmd;
+    C:\Users\Jano7\AppData\Local\Programs\Git\mingw64\bin;
+    C:\Users\Jano7\AppData\Local\Programs\Git\usr\bin          
+    </pre>
+
+    <p>
+        Takto si zobrazíme premennú PATH v Powershelly.
+    </p>
+
+    <img src="img/env.png" alt="Premenné prostredia">
+
+    <h3>Git a Git bash</h3>
+
+    <p>
+        Voliteľne je možné naištalovať si Git pre Windows, ktorý obsahuje nástroje Git a rôzne pomocné utility známe z
+        Linuxu. Git
+        je distribuovaný systém správy verzií zdrojového kódu.
+    </p>
+
+    <p>
+        Git si môžeme nainštalovať na adrese <a href="https://gitforwindows.org/">gitforwindows.org/</a>.
+    </p>
+
+    <img src="img/git.png" alt="Git for Windows">
+
+
+    <h2>Python editory and IDE-čka</h2>
+
+    <ul>
+        <li>Visual Studio Code</li>
+        <li>Atom</li>
+        <li>PyCharm</li>
+        <li>Iné</li>
+    </ul>
+
+</body>
+
+</html>
