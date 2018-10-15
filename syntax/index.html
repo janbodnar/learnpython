@@ -190,7 +190,7 @@ zložených zátvoriek {}. Na odsadenie sa odporúča použiť štyri medzery.
 </p>
 
 <pre>
-if age > 18:
+if age &lt; 18
     print("adult person")
 
 for i in range(5):
@@ -202,6 +202,44 @@ Za kľúčovým slovom <code>if</code> sa očakáva blok. Nový príkaz začína
 riadku, odsadený čtyroma medzerami. Cyklus for začína nový blok kódu.
 </p>
     
+
+<h2>Oddeľovače</h2>
+
+<p>
+Oddeľovače (delimiters) sú špeciálne znaky, ktoré určujú hranice medzi 
+separátnymi úsekmi kódu. 
+</p>
+
+<pre>
+(       )       [       ]       {       }      
+,       :       .       `       =       ;
++=      -=      *=      /=      //=     %=
+&lt:=      |=      ^=      &gt:&gt:=     &lt:&lt:=     **=
+'       "       \       @
+</pre>
+
+<p>
+Oddeľovače sa využívajú na tvorbu výrazou, reťazových literálov, ntíc, 
+slovníkov, alebo zoznamov.
+</p>
+
+<div class="codehead">operators.py</div>
+<pre class="code">
+#!/usr/bin/env python3
+
+nums = (1, 2, 4, 5, 6)
+print(nums)
+
+name = "Jack Sparrow"
+print(name)
+
+print(name.upper())
+</pre>
+
+<p>
+Tento príklad ukazuje využitie niekoľkých oddeľovačov.    
+</p>
+
 </main>
 </body>
 </html>
