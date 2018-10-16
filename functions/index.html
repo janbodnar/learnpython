@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
 <body>
+
+<main>
 
 <h1>Funkcie</h1>
     
@@ -30,6 +32,34 @@ funkcie sú súčasťou jazyka Python. Napríklad funkcie <code>dir()</code>,
 <code>len()</code>, alebo <code>abs()</code>. Uživateľsky definované funkcie
 sa vytvárajú pomocou kľúčového slova <code>def</code>.
 </p>
+
+<p>
+Zabudované funkcie rozdeľujeme na built-in funkcie a funckie dostupné v 
+externých moduloch.    
+</p>
+
+<div class="codehead">functions.py</div>
+<pre class="code">
+#!/usr/bin/python3
+
+from math import sqrt
+
+def cube(x):
+    return x * x * x
+
+print(abs(-1))
+print(cube(9))
+print(sqrt(81))
+</pre>
+
+<p>
+Funkcie <code>cube()</code> je uživateľsky definovanou funkciou. 
+Funkcie <code>abs()</code> je built-in funkciou. A funkcia <code>sqrt()</code>
+je funkcia dostupná v externom module (math).
+</p>
+
+</main>
+
 
 
 </body>
