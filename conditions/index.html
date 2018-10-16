@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podmienky</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h1>Podmienky v Pythone</h1>    
+
+<p>
+Dôležitým prvkom v programovaní je podmienečné vykonávanie kódu. 
+Na tvorbu podmienok používame kľúčové slová <code>if</code>, <code>else</code>, 
+<code>elif</code>, <code>and</code>, <code>or</code> a <code>not</code>.
+</p>
+
+<div class="codehead">driving_licence.py</div>
+<pre class="code">
+#!/usr/bin/env python3
+
+age_s = input("Enter your age: ")
+age = int(age_s)
+
+if age > 18:
+    print("Driving cars permitted")    
+else:
+    print("Cannot drive cars")
+</pre>
+
+<p>
+Tento príklad demonštruje jednoduchú if/else podmienku.
+</p>
+
+<div class="codehead">branches.py</div>
+<pre class="code">
+#!/usr/bin/env python3
+
+val_s = input("Enter a number: ")
+val = int(val_s)
+
+if val &lt; 0:
+    print("{} is negative".format(val))    
+elif val == 0:
+    print("{} is zero".format(val))
+else:
+    print("{} is positive".format(val))
+</pre>
+
+<p>
+Tento príklad ukazuje použitie troch podmienok.
+</p>
+
+
+
+    
+</body>
+</html>
