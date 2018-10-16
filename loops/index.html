@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cykly</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+<h1>Cykly v Pythone</h1>
+
+<p>
+Cyklus alebo skyčka je sada inštrukcií ktoré sa opakovane vykonávajú pokým
+je splnená určitá podmienka.
+</p>
+
+<p>
+Cykly v programovaní sa využívajú na opakované vykonávanie úkonov a na 
+prechádzanie elementov kontainerov. Cykly vytvárame v Pythone pomocou 
+kľúčových slov <code>while</code> and <code>for</code>.
+</p>
+
+<h2>For cykly</h2>
+
+<p>
+S kľúčovým slovom prechádzame sekvenciou dát. S cyklom for sa často používa 
+zabudovaná funkcia <code>range()</code>.
+</p>
+
+<div class="codehead">for_loops.py</div>
+<pre class="code">
+#!/usr/bin/env python3
+
+names = ('Peter', 'Robert', 'Julia', 'Thomas', 'Lucy')
+
+for name in names:
+    print(name)
+
+for e in "Forest":
+    print(e)
+
+for i in range(1, 11):
+    print(i)
+</pre>
+
+<p>
+Tento príklad vytvorí tri for cykly: prechádzame elementami ntice, reťazca, a 
+sekvencie čísiel.
+</p>
+
+<p>
+S <code>for</code> cyklom môže voliteľne použiť aj kľúčové slovo <code>else</code>.
+Blok kódu nasledujúci po <code>else</code> sa vykoná na konci iterácie.
+</p>
+
+<div class="codehead">for_loop_else.py</div>
+<pre class="code">
+#!/usr/bin/python3
+
+words = ("cup", "star", "monkey", "bottle", "paper", "door")
+
+for word in words:
+    
+    print(word)
+else:
+
+    print("Finished looping")  
+</pre>
+
+<p>
+V tomto príklade vypíšeme všetky elementy ntice words a na konci sa vypíše
+hláška <code>Finished looping</code>.
+</p>
+
+</body>
+</html>
