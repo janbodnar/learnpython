@@ -10,6 +10,8 @@
     
 <main>
 
+<nav><a href="/">Domov</a></nav>      
+
 <h1>Cykly v Pythone</h1>
 
 <p>
@@ -119,6 +121,31 @@ for nested in nums:
 Máme tri vnorené ntice v hlavnej ntici. Pomocou dvoch cyklov for prechádzame
 všetkými elementami. Prvý cyklus prechádza vnorené ntice, druhý prechádza 
 jednotlivými elementami vnorených ntíc.
+</p>
+
+<h2>While cykly</h2>
+
+<p>
+While cyklus vykonáva blok kódu pokiaľ je splnená podmienka, ktorá sa zadáva 
+do okrúhlych zátvoriek. 
+</p>
+
+<div class="codehead">while_loop.py</div>
+<pre class="code">
+#!/usr/bin/env python3
+
+mysum = 0
+i = 0
+
+while i &lt; 11:
+    mysum += i
+    i += 1
+
+print("The sum of values 1..10 is {}".format(mysum))
+</pre>
+
+<p>
+Tento príklad vypočíta a vypíše sumu z čísiel 1..10.
 </p>
 
 </main>
