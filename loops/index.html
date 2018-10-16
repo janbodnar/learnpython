@@ -75,6 +75,29 @@ V tomto príklade vypíšeme všetky elementy ntice words a na konci sa vypíše
 hláška <code>Finished looping</code>.
 </p>
 
+<p>
+Niekedy potrebujeme pracovať aj s indexami elementov. V takomto prípade
+môžeme využiť funkciu <code>enumerate()</code>.
+</p>
+
+<div class="codehead">for_loop_index.py</div>
+<pre class="code">
+#!/usr/bin/python3
+
+words = ("cup", "star", "monkey", "bottle", "paper", "door")
+
+print(list(enumerate(words)))
+
+for idx, word in enumerate(words):
+    
+    print("{0}: {1}".format(idx, word))
+</pre>
+
+<p>
+V tomto príklade vypíšeme všetky elementy ntice words a na konci sa vypíše
+hláška <code>Finished looping</code>.
+</p>
+
 </main>
 
 </body>
