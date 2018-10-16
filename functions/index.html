@@ -139,6 +139,59 @@ V príklade máme funkciu <code>power()</code>, ktorá má dva argumenty. Druhý
 argument má implicitnú hodnotu 2. 
 </p>
 
+<h2>Knižnica NumPy</h2>
+
+<p>
+NumPy je fundamentálny balík pre vedeckú (matematickú) prácu v Pythone. 
+Na tejto knižnici sú ďalej postavené ďalšie dôležité a populárne knižnice 
+(napr. Pandas, Matplotlib), ktoré sa využívajú v data science a machine learning.
+</p>
+
+<div class="codehead">matrixes.py</div>
+<pre class="code">
+#!/usr/bin/env python3
+
+import numpy as np
+
+a = np.array([1, 2, 3])
+print(a)
+print("********************")
+
+b = np.array([[1, 2, 3], [4, 5, 6]])
+
+print(b)
+print("********************")
+
+print(2*b)
+print("********************")
+
+print(a*b)
+print("********************")
+</pre>
+
+<p>
+Tento príklad pracuje s maticami.
+</p>
+
+<div class="codehead">trigo_fun.py</div>
+<pre class="code">
+#!/usr/bin/env python3
+
+import numpy as np
+
+a = np.array([0, 30, 45, 60, 90, 120]) 
+
+# Convert to radians by multiplying with pi/180 
+print(np.sin(a*np.pi/180))
+print(np.cos(a*np.pi/180))
+print(np.tan(a*np.pi/180)) 
+</pre>
+
+<p>
+Tento príklad pracuje využíva trigonometrické funkcie.
+</p>
+
+
 
 </main>
 
