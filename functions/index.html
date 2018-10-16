@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+    <title>Funkcie</title>
 </head>
 <body>
 
@@ -19,7 +19,7 @@ zdrojového kódu, umožňujú nám rozdeliť zložité úlohy do jednoduchšíc
 </p>
 
 <p>
-Funkcie sú v Pythone <em>first-class citizens</em>. To znamená, že ich môžeme
+Funkcie v Pythone sú <em>first-class citizens</em>. To znamená, že ich môžeme
 priradiť premenným, uložiť do kolekcií, a predať ako argument iným funkciám.
 Vďaka tomu môžeme v Pythone vykonávať niektoré pokročilé programovacie techniky.
 </p>
@@ -57,6 +57,33 @@ Funkcie <code>cube()</code> je uživateľsky definovanou funkciou.
 Funkcie <code>abs()</code> je built-in funkciou. A funkcia <code>sqrt()</code>
 je funkcia dostupná v externom module (math).
 </p>
+
+<div class="codehead">functions2.py</div>
+<pre class="code">
+#!/usr/bin/env python3
+
+n = (1, 2, 3, 4, 5)
+
+def stats(x):
+
+    mx = max(x)
+    mn = min(x)
+    ln = len(x)
+    sm = sum(x)
+
+    return mx, mn, ln, sm
+
+mx, mn, ln, sm = stats(n)
+
+print(mx, mn, ln, sm)
+</pre>
+
+<p>
+V príklade vydíme využitie zabudovaných funkcií <code>max()</code>, 
+<code>min()</code>, <code>len()</code> a <code>sum()</code>.
+</p>
+
+
 
 </main>
 
