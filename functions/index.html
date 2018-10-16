@@ -191,6 +191,32 @@ print(np.tan(a*np.pi/180))
 Tento príklad pracuje využíva trigonometrické funkcie.
 </p>
 
+<div class="codehead">line_chart.py</div>
+<pre class="code">
+#!/usr/bin/python3
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+t = np.arange(0.0, 3.0, 0.01)
+s = np.sin(2.5 * np.pi * t)
+
+plt.plot(t, s)
+    
+plt.xlabel('time (s)')
+plt.ylabel('voltage (mV)')
+
+plt.title('Sine Wave')
+plt.grid(True)
+
+plt.show()
+</pre>
+
+<p>
+Tento príklad využíva NumPy pre vytvorenie dátových radov. Tie sa použijú
+pri tvorbe čiarového grafu.
+</p>
+
 
 
 </main>
