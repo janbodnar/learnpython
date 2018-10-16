@@ -79,10 +79,65 @@ print(mx, mn, ln, sm)
 </pre>
 
 <p>
-V príklade vydíme využitie zabudovaných funkcií <code>max()</code>, 
+V príklade vidíme využitie zabudovaných funkcií <code>max()</code>, 
 <code>min()</code>, <code>len()</code> a <code>sum()</code>.
 </p>
 
+<h2>Argumenty funkcií</h2>
+
+<p>
+Funckie môžu (ale nemusia) prijímať argumenty. Argumenty sú hodnoty, ktoré
+sa posielajú funkciám. Funckie tieto argumenty spracujú a voliteľne vrátia
+nejakú hodnotu späť pomocou kľúčového slova <code>return</code>.
+</p>
+
+<div class="codehead">fahrenheit.py</div>
+<pre class="code">
+#!/usr/bin/env python3
+
+# fahrenheit.py
+
+def C2F(c):
+    return c * 9/5 + 32
+
+c1 = C2F(100)
+c2 = C2F(0)
+c3 = C2F(30)
+
+print(c1, c2, c3)
+</pre>
+
+<p>
+V príklade máme uživateľsky definovanú funkciu <code>C2F()</code>, ktorá
+prepočíta teplotu v stupňoch Celzia na Fahrenheit.
+</p>
+
+<p>
+Funkcie môžu mať tiež argumenty s implicitnými hodnotami. Tie sa využijú,
+ak nie sú funkciám zadané hodtnoty.   
+</p>
+
+<div class="codehead">implicit_args.py</div>
+<pre class="code">
+def power(x, y=2):
+
+    r = 1
+
+    for i in range(y):
+
+        r = r * x
+
+        return r
+
+print(power(3))
+print(power(3, 3))
+print(power(5, 5))
+</pre>
+
+<p>
+V príklade máme funkciu <code>power()</code>, ktorá má dva argumenty. Druhý
+argument má implicitnú hodnotu 2. 
+</p>
 
 
 </main>
