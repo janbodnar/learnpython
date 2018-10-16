@@ -217,6 +217,23 @@ Tento príklad využíva NumPy pre vytvorenie dátových radov. Tie sa použijú
 pri tvorbe čiarového grafu.
 </p>
 
+<div class="codehead">data_frame.py</div>
+<pre class="code">
+#!/usr/bin/env python3
+
+import pandas as pd
+import numpy as np
+
+dates = pd.date_range('20130101', periods=8)
+df = pd.DataFrame(np.random.randn(8,5), index=dates, columns=list('ABCDE'))
+
+print(df)
+</pre>
+
+<p>
+Tento príklad využíva NumPy pre vytvorenie dátových rámcov knižnice Pandas.
+</p>
+
 
 
 </main>
