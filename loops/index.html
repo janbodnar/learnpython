@@ -86,8 +86,6 @@ môžeme využiť funkciu <code>enumerate()</code>.
 
 words = ("cup", "star", "monkey", "bottle", "paper", "door")
 
-print(list(enumerate(words)))
-
 for idx, word in enumerate(words):
     
     print("{0}: {1}".format(idx, word))
@@ -96,6 +94,31 @@ for idx, word in enumerate(words):
 <p>
 V tomto príklade vypíšeme všetky elementy ntice words a na konci sa vypíše
 hláška <code>Finished looping</code>.
+</p>
+
+<p>
+Cykly for sa môžu vnorovať.    
+</p>
+
+<div class="codehead">nested_for_loops.py</div>
+<pre class="code">
+#!/usr/bin/python3
+
+nums = ((1, 2, 3), (4, 5, 6), (7, 8, 9))
+
+for nested in nums:
+    
+    for e in nested:
+        
+        print(e, end=' ')
+    
+    print()
+</pre>
+
+<p>
+Máme tri vnorené ntice v hlavnej ntici. Pomocou dvoch cyklov for prechádzame
+všetkými elementami. Prvý cyklus prechádza vnorené ntice, druhý prechádza 
+jednotlivými elementami vnorených ntíc.
 </p>
 
 </main>
