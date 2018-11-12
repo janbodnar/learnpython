@@ -22,7 +22,7 @@ externých distribučných balíkov. Plní podobné úlohy ako inštalačný man
 
 <p>
 Pip inštaluje balíček a zároveň všetky jeho závisloti, čím výrazne znednodušuje
-prácu programátorov.    
+prácu programátorov. Každá verzia Pythonu má svoj vlastný pip manažér.
 </p>
 
 <h2>Repozitár PyPi</h2>
@@ -41,6 +41,41 @@ matematikmi pre data science a machine learning. Umožňuje inštaláciu
 distribučných balíkov jazykov Python, R, Fortran a ďalších. Anaconda
 a pip sú oddelené systémy. 
 </p>
+
+<h2>Pip príkazy</h2>
+
+<p>
+Na inštaláciu distribučného balíčka použijeme príkaz <code>pip install</code>.
+</p>
+
+<pre class="code">
+$ pip install humps
+</pre>
+
+<p>
+Tu si nainštalujeme balík <code>humps</code>, ktorý konvertuje reťazec na 
+formát camel case. 
+</p>
+
+<div class="codehead">camel_case.py</div>
+<pre class="code">
+#!/usr/bin/env python3
+
+from humps import camel
+
+s1 = "thick forest"
+
+print(camel.case(s1))
+
+s2 = "FORTRAN LANGUAGE"
+
+print(camel.case(s2))
+</pre>
+
+<p>
+Príklad transformuje dva reťazce na formát camel case.
+</p>
+
 
 </main>
 </body>
