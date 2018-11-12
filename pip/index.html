@@ -48,7 +48,7 @@ a pip sú oddelené systémy.
 Na inštaláciu distribučného balíčka použijeme príkaz <code>pip install</code>.
 </p>
 
-<pre class="code">
+<pre>
 $ pip install humps
 </pre>
 
@@ -76,6 +76,28 @@ print(camel.case(s2))
 Príklad transformuje dva reťazce na formát camel case.
 </p>
 
+<pre>
+$ python camel_case.py
+thickForest
+fortranLanguage
+</pre>
+
+<p>
+Dostaneme takýto výstup.
+</p>
+
+<pre>
+$ python camel_case.py
+Traceback (most recent call last):
+  File "camel_case.py", line 3, in &lt;module&gt;
+    from humps import camel
+ModuleNotFoundError: No module named 'humps'
+</pre>
+
+<p>
+Po tom, čo sme odinštalovali balík, už program nevieme spustiť.
+Python nám zahlási chybu, že nepozná modul <code>humps</code>.
+</p>
 
 </main>
 </body>
