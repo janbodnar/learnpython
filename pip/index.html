@@ -65,30 +65,6 @@ $ pip search machine
 Pomocou príkazu <code>pip search</code> môžeme prehľadávať distribučné balíky.
 </p>
 
-<pre>
-$ pip list
-Package          Version
----------------- ----------
-certifi          2018.10.15
-cycler           0.10.0
-kiwisolver       1.0.1
-matplotlib       3.0.0
-numpy            1.15.2
-Pillow           5.3.0
-pip              18.1
-pipenv           2018.10.13
-pyparsing        2.2.2
-python-dateutil  2.7.3
-setuptools       39.0.1
-six              1.11.0
-virtualenv       16.0.0
-virtualenv-clone 0.4.0
-</pre>
-
-<p>
-Zoznam nainštalovaných balíkov nám vráti príkaz <code>pip list</code>.
-</p>
-
 <p>
 Na inštaláciu distribučného balíčka použijeme príkaz <code>pip install</code>.
 </p>
@@ -154,6 +130,40 @@ ModuleNotFoundError: No module named 'humps'
 <p>
 Po tom, čo sme odinštalovali balík, už program nevieme spustiť.
 Python nám zahlási chybu, že nepozná modul <code>humps</code>.
+</p>
+
+<pre>
+$ pip list
+Package          Version
+---------------- ----------
+certifi          2018.10.15
+cycler           0.10.0
+kiwisolver       1.0.1
+matplotlib       3.0.0
+numpy            1.15.2
+Pillow           5.3.0
+pip              18.1
+pipenv           2018.10.13
+pyparsing        2.2.2
+python-dateutil  2.7.3
+setuptools       39.0.1
+six              1.11.0
+virtualenv       16.0.0
+virtualenv-clone 0.4.0
+</pre>
+
+<p>
+Zoznam nainštalovaných balíkov nám vráti príkaz <code>pip list</code>.
+</p>
+
+<pre>
+$ pip freeze &gt; requirements.txt
+</pre>
+
+<p>
+Pomocou príkazu <code>pip freeze</code> si môžeme vytvoriť
+presný zoznam požadovaných knižníc, ktoré môžeme využiť v inom 
+počítači.
 </p>
 
 </main>
